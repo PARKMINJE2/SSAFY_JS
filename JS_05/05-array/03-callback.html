@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 1. 메서드 안에 콜백함수 만들기
+    const numbers1 = [1, 2, 3]
+    numbers1.forEach(function (number) {
+      console.log(number ** 2)
+    })
+
+    // 2. 콜백함수를 바깥에 만들고 메서드에 이름만 삽입
+    const numbers2 = [1, 2, 3]
+    const callBackFunc = function(number) {
+      console.log(number ** 2)
+    }
+
+    numbers2.forEach(callBackFunc)
+
+  </script>
+</body>
+
+</html>
